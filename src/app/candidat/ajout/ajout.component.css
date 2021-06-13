@@ -1,0 +1,66 @@
+h1{
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 60px;
+   font-weight:normal;
+   
+   width: 70%;
+   margin: auto;
+   margin-top: 50px;
+   
+   text-align: center;
+   
+ }
+ .Introduction{
+  font-family: "Helvetica Neue",Arial,sans-serif; 
+  font-size: 16px; font-weight: normal; 
+  font-style: normal;
+  line-height: 1.5625;
+  text-align: center;
+  
+  
+  margin-left: 5%;
+  
+  width:40%;
+  
+  white-space:pre-line;
+  display: inline-block;
+  vertical-align: 11em;
+  align-content: center;
+
+}
+
+#separation{
+  content:"";
+  border-left:2px solid #b9b1b3;
+  width: 1%;
+  height: 35%;
+  display: inline-block;
+  vertical-align: 3em;
+  
+
+}
+
+form{
+  width:30%;
+  margin: auto;
+  padding: 3%;
+  display: inline-block;
+  margin-right: 5%;
+}
+
+mat-form-field{
+  display:flex;
+  flex-direction: column;
+
+} 
+mat-label{color : green;
+  
+}
+
+.button{
+  position:absolute;
+    left: 202px;
+    top: 198px;
+
+}
+

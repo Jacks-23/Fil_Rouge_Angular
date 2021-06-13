@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <h1> Page d'accueil de votre questionnaire technique</h1>
+        <pre class="Introduction">
+          Vous allez participer à un questionnaire technique.
+          Mais avant veuillez vérifier vos informations personelles et les corriger au besoin.
+          Dès que vous êtes prêt cliquez sur le bouton <strong>'Commencer le quiz'</strong>. 
+          Bonne chance ! 
+        </pre>
+        <div id="separation"></div>
+        <form [formGroup]="form">
+            <mat-form-field>
+                <mat-label>Nom</mat-label>
+                <input matInput formControlName="nom">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Prénom</mat-label>
+                <input matInput formControlName="prénom">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Genre</mat-label>
+                <mat-select>
+                    <mat-option value="one">Homme</mat-option>
+                    <mat-option value="two">Femme</mat-option>
+                    <mat-option value="three">Neutre</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Téléphone</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Mail</mat-label>
+                <input matInput placeholder="pat@example.com" required>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Adresse</mat-label>
+                <input matInput>
+            </mat-form-field>
+        
+            <small>* indique un champ obligatoire</small>
+        </form>
+        <div >
+            <button id="button" mat-raised-button color="warn" onclick="location.href='http://127.0.0.1:5500/src/app/candidat/reponse/reponse.component.html'">
+                Commencer le quiz
+            </button>
+        </div>
+
+    </body>
+
